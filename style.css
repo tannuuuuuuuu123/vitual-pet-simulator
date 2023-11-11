@@ -1,0 +1,298 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+
+/* title panel */
+#title-panel {
+    padding-top: 50px;
+}
+
+
+/* GAME CONTENT */
+    /* SIDE PANEL
+    MAIN PANEL */
+
+.game-container {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* border-color: black;
+    border-style: solid;
+    border-width: 2px; */
+    height: 500px;
+    width: 1000px;
+    display: flex;
+    align-content: center;
+}
+
+/* SIDE-PANEL */
+
+#side_panel {
+    /* background-color: rgb(35, 42, 87); */
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+    /* background-image: linear-gradient( 86.3deg,  rgba(0,119,182,1) 3.6%, rgba(8,24,68,1) 87.6% ); */
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgba(65,143,222,1) 79% ); */
+    width: 25%;
+    height: 100%;
+    color: white;
+}
+
+
+#side_panel_container {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+#pet_name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pet_stats {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.pet_stats p {
+    padding-top: 20px;
+}
+
+.stats_bar {
+    width: 100%;
+    border-style: solid;
+    border-radius: 5%;
+    border-color: lightgrey;
+    border-width: 2px;
+    height: 20px;
+}
+
+#stats_health {
+    width: 0%;
+    height: 20px;
+    background-color: blue;
+}
+
+#stats_hunger {
+    width: 0%;
+    height: 20px;
+    background-color: green;
+}
+
+#stats_happiness {
+    width: 0%;
+    height: 20px;
+    background-color: orange;
+}
+
+
+/* MAIN-PANEL */
+
+#main_panel {
+    background-color: rgb(169, 209, 142);
+    background-image: url("https://img.freepik.com/free-vector/autumn-landscape-with-trees-night_107791-11603.jpg");
+    background-size: 100% 100%;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* welcome */
+
+#welcome_screen {
+    /* background-color: rgb(169, 209, 142); */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome_screen_text {
+    padding-left: 100px;
+    padding-top: 60px;
+    height: 60%;
+    background-color: rgb(255, 255,255, 0.5);
+}
+
+#title {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+#pet_name_container {
+    display: flex;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+#pet_name_input {
+    width: 30%;
+    margin-right: 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid black;
+    font-size: 12px;
+    
+}
+
+#pet_name_input:focus {
+    outline: none;
+}
+
+#pet_name_input[type="text"] {
+    font-size: 20px;
+}
+
+
+/* Game over */
+#game_over_screen {
+    height: 80;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    display: none;
+    height: 60%;
+    background-color: rgb(255, 255,255, 0.5);
+    font-weight: bold;
+}
+
+
+/* character */
+
+#character_container {
+    height: 80%;
+    width: 100%;
+    /* background-color: greenyellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+}
+
+#character {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: pink; */
+}
+
+
+/* GAME CONTROLS*/
+
+#game_controls_container {
+    height: 20%;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.game_controls {
+    color: white;
+    margin: 30px;
+}
+
+button {
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    height: 50px;
+    width: 100px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 3px 2px 1px 3px #999;
+}
+
+button:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
+}
+
+button:active {
+    box-shadow: 3px 2px 1px 1px #666;
+    transform: translateY(2px);
+}
+
+
+#btn_submit {
+    height: 25px;
+    width: 80px;
+}
+
+#btn_reset {
+    /* background-color:lightgrey;
+    display: none; */
+    background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+        margin: 5px;
+        
+        text-align: center;
+        text-transform: uppercase;
+        transition: .5s;
+        background-size: 200% auto;
+        color: #fff;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: none;
+}
+/* #btn_reset{
+        background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+        margin: 5px;
+        
+        text-align: center;
+        text-transform: uppercase;
+        transition: .5s;
+        background-size: 200% auto;
+        color: #fff;
+        box-shadow: 0 0 20px #eee;
+        border-radius: 10px;
+        display: block;
+    } */
+
+
+#btn_clean {
+    background-color: rgb(79, 79, 255);
+}
+
+#btn_feed {
+    background-color: green;
+}
+
+#btn_play {
+    background-color: orangered;
+}
+
+
+/* credits-panel */
+#footer {
+    display: flex-end;
+    width: 1000px;
+    text-align: right;
+    font-size: 10px;
+
+}
+

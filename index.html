@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Virtual Pet</title>
+</head>
+<body>
+    <div id="title-panel">
+    </div>
+
+    <div class="game-container">
+
+        <div id="side_panel">
+            <div id="side_panel_container">
+                <p id="pet_name">Pet Name</p>
+                <p id="pet_age">0 days old</p>    
+                <div class="pet_stats">
+                    <p>Health</p>
+                    <div class="stats_bar">
+                        <div id="stats_health"></div>
+                    </div>
+                    <p>Hunger</p>
+                    <div class="stats_bar">
+                        <div id="stats_hunger"></div>
+                    </div>
+                    <p>Happiness</p>
+                    <div class="stats_bar">
+                        <div id="stats_happiness"></div>
+                    </div>
+                </div>
+    
+                <button id="btn_reset" onclick=resetGame()>
+                    Reset Game
+                </button>
+
+            </div>
+        </div>
+
+        <div id="main_panel">
+            <div id="welcome_screen">
+                <div id="welcome_screen_text">
+                    <div id="title">
+                        <h2>Welcome to</h2>
+                        <h1>Virtual Pet!</h1>
+                    </div>
+                    <h3>What is the name of your pet?</h3>
+                    <div id="pet_name_container">
+                        <input type="text" id="pet_name_input" maxlength="10">
+                        <button id="btn_submit" onclick=beginGame()>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="game_over_screen">
+                <h1>Game over!</h1>
+                <p id="end_game_pet_name">
+                </p>
+                <p id="end_game_age">
+                </p>
+            </div>
+            <div id=character_container>
+                <canvas id="canvas1"></canvas>
+            </div>
+            <div id="game_controls_container">
+                <button class="game_controls" id="btn_clean" onclick=clean()>Clean</button>
+                <button class="game_controls" id="btn_feed" onclick=feed()>Feed</button>
+                <button class="game_controls" id="btn_play" onclick=play()>Play</button>
+            </div>
+
+        </div>    
+    </div>
+    
+    <div id="footer">
+        © Prayagraj 2023 | ritika Solo Project
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
